@@ -12,10 +12,10 @@
   - 執行 `docker ps` 看看有沒有開啟成功，這裡可以看到container id
   - 執行 `docker exec -it <container_id | container_name> /bin/bash` 即可進入該container的bash
   - 進入bash後，執行`mysql -u root -p`按下enter後輸入密碼，即可進入mysql
-  - 測試mysql是否運行，執行`node test.con.js`看看是否顯示`Connected`
+5. 測試mysql是否運行，先將`test_con.js.default`改成`test_con.js`並改上密碼，執行`node test.con.js`看看是否顯示`Connected`
   （先裝node.js, 運行`npm install`或`yarn` ）
 
-5. 開啟資料庫UI，連上
+6. 開啟資料庫UI，連上
 host:127.0.0.1
 port: 3306 (看你`docker-compose.yml`怎麼編輯的)
 
